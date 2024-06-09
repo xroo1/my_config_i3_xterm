@@ -1,0 +1,53 @@
+xterm*faceName: Less Perfect DOS VGA
+xterm*faceSize: 10
+
+! Copiar e colar com o mouse
+XTerm*selectToClipboard: true
+! Copiar e colar com Ctrl+Shift+C e Ctrl+Shift+V
+XTerm*vt100.translations: #override \
+    Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
+
+
+XTerm*VT100.Translations: #override \
+    Ctrl Shift <KeyPress> plus: larger-vt-font() \n\
+    Ctrl Shift <KeyPress> minus: smaller-vt-font() \n\
+    Ctrl Shift <KeyPress> underscore: smaller-vt-font()
+
+! special
+*.foreground:   #c0c0c0
+*.background:   #101010
+*.cursorColor:  #c0c0c0
+
+! black
+*.color0:       #080808
+*.color8:       #36393f
+
+! red
+*.color1:       #EC1850
+*.color9:       #EC1850
+
+! green
+*.color2:       #3ea28d
+*.color10:      #71c4ba
+
+! yellow
+*.color3:       #4dc5ce
+*.color11:      #5e767f
+
+! blue
+*.color4:       #6ea2a5
+*.color12:      #6abdc1
+
+! magenta
+*.color5:       #a8a8a8
+*.color13:      #4e4d80
+
+! cyan
+*.color6:       #558188
+*.color14:      #4fc8ce
+
+! white
+*.color7:       #c0c0c0
+*.color15:      #a6a8aa
+
